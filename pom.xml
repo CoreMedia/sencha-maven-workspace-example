@@ -15,6 +15,7 @@
   <modules>
     <module>my-package</module>
     <module>my-app</module>
+    <module>my-webapp</module>
   </modules>
 
   <build>
