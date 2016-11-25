@@ -1,0 +1,41 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>net.jangaroo.senchacon</groupId>
+  <artifactId>my-package</artifactId>
+  <version>1-SNAPSHOT</version>
+
+  <packaging>jangaroo-pkg</packaging>
+
+  <name>My Package</name>
+  <description>
+    A simple Sencha Package in Maven.
+  </description>
+
+  <build>
+    <resources>
+      <resource>
+        <directory>src/main/sencha</directory>
+        <targetPath>../packages/${project.groupId}__${project.artifactId}</targetPath>
+      </resource>
+    </resources>
+    <plugins>
+      <plugin>
+        <groupId>net.jangaroo</groupId>
+        <artifactId>jangaroo-maven-plugin</artifactId>
+        <extensions>true</extensions>
+        <version>4.0.38</version>
+      </plugin>
+    </plugins>
+  </build>
+
+  <dependencies>
+    <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>simple-workspace</artifactId>
+      <version>${project.version}</version>
+      <type>pom</type>
+    </dependency>
+  </dependencies>
+
+</project>

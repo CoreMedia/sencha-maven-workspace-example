@@ -1,0 +1,45 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>net.jangaroo.senchacon</groupId>
+  <artifactId>simple-workspace</artifactId>
+  <version>1-SNAPSHOT</version>
+
+  <packaging>pom</packaging>
+
+  <name>Simple Workspace</name>
+  <description>
+    A simple Sencha Maven workspace.
+  </description>
+
+  <modules>
+    <module>my-package</module>
+    <module>my-app</module>
+  </modules>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>net.jangaroo</groupId>
+        <artifactId>jangaroo-maven-plugin</artifactId>
+        <version>4.0.38</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>extract-remote-packages</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+
+  <dependencies>
+    <dependency>
+      <groupId>net.jangaroo.com.sencha</groupId>
+      <artifactId>ext-js-pkg-gpl</artifactId>
+      <version>6.2.0</version>
+      <type>pkg</type>
+    </dependency>
+  </dependencies>
+</project>
