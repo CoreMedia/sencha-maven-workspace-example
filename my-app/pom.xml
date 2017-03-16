@@ -25,7 +25,7 @@
       <plugin>
         <groupId>net.jangaroo</groupId>
         <artifactId>jangaroo-maven-plugin</artifactId>
-        <version>4.0.38</version>
+        <version>4.0.48</version>
         <extensions>true</extensions>
         <configuration>
           <applicationClass>MyApp.Main</applicationClass>
@@ -36,10 +36,9 @@
 
   <dependencies>
     <dependency>
-      <groupId>${project.groupId}</groupId>
-      <artifactId>simple-workspace</artifactId>
-      <version>${project.version}</version>
-      <type>pom</type>
+      <groupId>net.jangaroo.com.sencha</groupId>
+      <artifactId>ext-js-pkg</artifactId>
+      <version>6.2.0-gpl-1</version>
     </dependency>
 
     <dependency>

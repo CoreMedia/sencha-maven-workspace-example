@@ -12,6 +12,7 @@ buildNumber.properties
 ### Sencha Cmd
 .sencha/.cvsignore
 .sencha/.gitignore
+.remote-packages
 
 ### IDEA
 .idea/
