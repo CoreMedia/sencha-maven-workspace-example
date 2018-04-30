@@ -11,7 +11,7 @@ Getting Started
 ---------------
 1. Install Java 8
 2. Install Apache Maven >= 3.3
-3. Install Sencha Cmd 6.x (as of now, 6.2.1)
+3. Install Sencha Cmd 6.x (as of now, 6.2.2)
 
 Checkpoint:
 - `mvn -v` - no errors
